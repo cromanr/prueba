@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 public class AndroidMapas extends MapActivity {
 
-	private MapView mapa = null;
+	private MapView mview = null;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -15,10 +15,10 @@ public class AndroidMapas extends MapActivity {
         setContentView(R.layout.main);
         
         //Obtenemos una referencia al control MapView
-        mapa = (MapView)findViewById(R.id.mapa);
+        mview = (MapView)findViewById(R.id.mapa);
         
         //Mostramos los controles de zoom sobre el mapa
-        mapa.setBuiltInZoomControls(true);
+        mview.setBuiltInZoomControls(true);
     }
     
     @Override
